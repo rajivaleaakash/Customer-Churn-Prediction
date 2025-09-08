@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 def create_connection():
     '''Create and return database engine'''
     try:
-        server = r'AAKASH-LAPTOP\SQLEXPRESS'
+        server = r'server_name'
         database = r'db_churn'
         connection_string = f"mssql+pyodbc://@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes"
         engine = create_engine(connection_string)

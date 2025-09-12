@@ -1,22 +1,9 @@
 from sqlalchemy import create_engine,text
 import pandas as pd
 import os
-import logging
 import time
-
-# Creating logs directory if it doesn't exist.
-os.makedirs("logs", exist_ok=True)
-
-# Configure logging
-logging.basicConfig(
-    filename="logs/ingestion_db.log",
-    level=logging.DEBUG,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    filemode="a"
-)
-
-logger = logging.getLogger(__name__)
-
+from logging_setup import setup_logger
+logger = setup_logger('ingestion_db')
 
 def create_connection():
     '''Create and return database engine'''
@@ -63,7 +50,7 @@ def ingest_db(df, table_name, engine):
 
 def load_raw_data():
      """This function will load CSV data into dataframe and ingest into db"""
-     data_directory = r"d:\Elevated_Lab\Customer Churn Analysis for Telecom Industry"
+     data_directory = r"D:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\data"
 
      if not os.path.exists(data_directory):
           logger.error(f"directory not found: {data_directory}")

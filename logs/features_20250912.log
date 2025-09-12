@@ -1,0 +1,72 @@
+2025-09-12 19:23:41,314 - features - INFO - load_and_split_data:303 - Database connection closed
+2025-09-12 19:27:44,536 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-12 19:27:44,537 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-12 19:27:45,715 - features - INFO - load_and_split_data:273 - Loaded data with shape: (7043, 21)
+2025-09-12 19:27:45,751 - features - INFO - load_and_split_data:289 - Data split completed - Train: 5634, Test: 1409
+2025-09-12 19:27:45,754 - features - INFO - load_and_split_data:302 - Database connection closed
+2025-09-12 19:27:45,755 - features - INFO - preprocess_features:75 - Starting feature preprocessing. Input shape: (5634, 21)
+2025-09-12 19:27:45,798 - features - INFO - preprocess_features:86 - Dropped 0 rows with missing values
+2025-09-12 19:27:45,815 - features - INFO - preprocess_features:95 - Filled 8 missing totalcharges with median: 1398.125
+2025-09-12 19:27:45,843 - features - INFO - preprocess_features:114 - Mapped gender column 'gender' to binary values
+2025-09-12 19:27:45,853 - features - INFO - preprocess_features:125 - Mapped yes/no column 'partner' to binary values
+2025-09-12 19:27:45,857 - features - INFO - preprocess_features:125 - Mapped yes/no column 'dependents' to binary values
+2025-09-12 19:27:45,863 - features - INFO - preprocess_features:125 - Mapped yes/no column 'phoneservice' to binary values
+2025-09-12 19:27:45,873 - features - INFO - preprocess_features:125 - Mapped yes/no column 'multiplelines' to binary values
+2025-09-12 19:27:45,881 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinesecurity' to binary values
+2025-09-12 19:27:45,893 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinebackup' to binary values
+2025-09-12 19:27:45,903 - features - INFO - preprocess_features:125 - Mapped yes/no column 'deviceprotection' to binary values
+2025-09-12 19:27:45,910 - features - INFO - preprocess_features:125 - Mapped yes/no column 'techsupport' to binary values
+2025-09-12 19:27:45,920 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingtv' to binary values
+2025-09-12 19:27:45,924 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingmovies' to binary values
+2025-09-12 19:27:45,929 - features - INFO - preprocess_features:125 - Mapped yes/no column 'paperlessbilling' to binary values
+2025-09-12 19:27:45,937 - features - INFO - create_features:15 - Starting feature engineering
+2025-09-12 19:27:45,953 - features - INFO - create_features:24 - Created tenure-based features
+2025-09-12 19:27:45,973 - features - INFO - create_features:32 - Created contract-based features
+2025-09-12 19:27:45,979 - features - INFO - create_features:41 - Created service bundle score using 4 columns
+2025-09-12 19:27:45,980 - features - INFO - create_features:48 - Created charges per tenure feature
+2025-09-12 19:27:45,981 - features - INFO - create_features:52 - Created high monthly charges feature
+2025-09-12 19:27:45,988 - features - INFO - create_features:56 - Created high risk payment feature
+2025-09-12 19:27:45,992 - features - INFO - create_features:62 - Created customer profile features
+2025-09-12 19:27:45,992 - features - INFO - create_features:64 - Feature engineering completed. Shape: (5634, 31)
+2025-09-12 19:27:45,994 - features - INFO - preprocess_features:141 - Converted category column 'tenure_segment' to numeric
+2025-09-12 19:27:46,014 - features - INFO - preprocess_features:155 - One-hot encoded column 'contract' into 2 features
+2025-09-12 19:27:46,026 - features - INFO - preprocess_features:155 - One-hot encoded column 'internetservice' into 2 features
+2025-09-12 19:27:46,039 - features - INFO - preprocess_features:155 - One-hot encoded column 'paymentmethod' into 3 features
+2025-09-12 19:27:46,046 - features - INFO - preprocess_features:166 - Dropped columns: ['customerid', 'tenure', 'partner', 'dependents']
+2025-09-12 19:27:46,054 - features - INFO - preprocess_features:177 - Stored 30 feature names for training
+2025-09-12 19:27:46,055 - features - INFO - preprocess_features:179 - Feature preprocessing completed. Output shape: (5634, 31)
+2025-09-12 19:27:46,057 - features - INFO - preprocess_features:75 - Starting feature preprocessing. Input shape: (1409, 21)
+2025-09-12 19:27:46,070 - features - INFO - preprocess_features:86 - Dropped 0 rows with missing values
+2025-09-12 19:27:46,072 - features - INFO - preprocess_features:95 - Filled 3 missing totalcharges with median: 1395.525
+2025-09-12 19:27:46,080 - features - INFO - preprocess_features:114 - Mapped gender column 'gender' to binary values
+2025-09-12 19:27:46,086 - features - INFO - preprocess_features:125 - Mapped yes/no column 'partner' to binary values
+2025-09-12 19:27:46,088 - features - INFO - preprocess_features:125 - Mapped yes/no column 'dependents' to binary values
+2025-09-12 19:27:46,091 - features - INFO - preprocess_features:125 - Mapped yes/no column 'phoneservice' to binary values
+2025-09-12 19:27:46,093 - features - INFO - preprocess_features:125 - Mapped yes/no column 'multiplelines' to binary values
+2025-09-12 19:27:46,098 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinesecurity' to binary values
+2025-09-12 19:27:46,103 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinebackup' to binary values
+2025-09-12 19:27:46,105 - features - INFO - preprocess_features:125 - Mapped yes/no column 'deviceprotection' to binary values
+2025-09-12 19:27:46,107 - features - INFO - preprocess_features:125 - Mapped yes/no column 'techsupport' to binary values
+2025-09-12 19:27:46,108 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingtv' to binary values
+2025-09-12 19:27:46,110 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingmovies' to binary values
+2025-09-12 19:27:46,114 - features - INFO - preprocess_features:125 - Mapped yes/no column 'paperlessbilling' to binary values
+2025-09-12 19:27:46,118 - features - INFO - create_features:15 - Starting feature engineering
+2025-09-12 19:27:46,121 - features - INFO - create_features:24 - Created tenure-based features
+2025-09-12 19:27:46,125 - features - INFO - create_features:32 - Created contract-based features
+2025-09-12 19:27:46,126 - features - INFO - create_features:41 - Created service bundle score using 4 columns
+2025-09-12 19:27:46,127 - features - INFO - create_features:48 - Created charges per tenure feature
+2025-09-12 19:27:46,130 - features - INFO - create_features:52 - Created high monthly charges feature
+2025-09-12 19:27:46,132 - features - INFO - create_features:56 - Created high risk payment feature
+2025-09-12 19:27:46,136 - features - INFO - create_features:62 - Created customer profile features
+2025-09-12 19:27:46,136 - features - INFO - create_features:64 - Feature engineering completed. Shape: (1409, 31)
+2025-09-12 19:27:46,137 - features - INFO - preprocess_features:141 - Converted category column 'tenure_segment' to numeric
+2025-09-12 19:27:46,140 - features - INFO - preprocess_features:155 - One-hot encoded column 'contract' into 2 features
+2025-09-12 19:27:46,143 - features - INFO - preprocess_features:155 - One-hot encoded column 'internetservice' into 2 features
+2025-09-12 19:27:46,150 - features - INFO - preprocess_features:155 - One-hot encoded column 'paymentmethod' into 3 features
+2025-09-12 19:27:46,154 - features - INFO - preprocess_features:166 - Dropped columns: ['customerid', 'tenure', 'partner', 'dependents']
+2025-09-12 19:27:46,155 - features - INFO - preprocess_features:179 - Feature preprocessing completed. Output shape: (1409, 31)
+2025-09-12 19:27:46,158 - features - INFO - select_features:190 - Starting feature selection with k=15
+2025-09-12 19:27:46,185 - features - INFO - select_features:214 - Selected 15 features: ['onlinesecurity', 'paperlessbilling', 'monthlycharges', 'totalcharges', 'tenure_year', 'is_month_to_month', 'has_long_contract', 'service_bundle_score', 'high_monthly_charges', 'high_risk_payment', 'contract_One_year', 'contract_Two_year', 'internetservice_Fiber_optic', 'internetservice_No', 'paymentmethod_Electronic_check']
+2025-09-12 19:27:46,186 - features - INFO - get_feature_importance_names:227 - Calculating feature importance for top 10 features
+2025-09-12 19:27:48,276 - features - INFO - get_feature_importance_names:252 - Top Feature Importances calculated successfully
+2025-09-12 19:27:48,321 - features - INFO - main:330 - === Features Module Demo Completed Successfully ===

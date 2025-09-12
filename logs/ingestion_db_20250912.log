@@ -1,0 +1,23 @@
+2025-09-12 19:22:48,949 - ingestion_db - INFO - create_connection:19 - Database connection established successfully
+2025-09-12 19:22:48,949 - ingestion_db - INFO - load_raw_data:68 - ==================================================
+2025-09-12 19:22:48,949 - ingestion_db - INFO - load_raw_data:69 - Starting CSV ingestion process
+2025-09-12 19:22:48,949 - ingestion_db - INFO - load_raw_data:70 - Source directory: D:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\data
+2025-09-12 19:22:48,950 - ingestion_db - INFO - load_raw_data:71 - ==================================================
+2025-09-12 19:22:48,951 - ingestion_db - INFO - load_raw_data:80 - Found 1 CSV file to process
+2025-09-12 19:22:48,953 - ingestion_db - INFO - load_raw_data:87 - Processing file: telecom_data.csv
+2025-09-12 19:22:48,999 - ingestion_db - INFO - load_raw_data:91 - Loaded CSV with shape: (7043, 21)
+2025-09-12 19:22:48,999 - ingestion_db - INFO - load_raw_data:92 - Columns: ['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies', 'Contract', 'PaperlessBilling', 'PaymentMethod', 'MonthlyCharges', 'TotalCharges', 'Churn']
+2025-09-12 19:22:49,000 - ingestion_db - INFO - ingest_db:29 - Starting ingestion for table: telecom_data
+2025-09-12 19:22:49,000 - ingestion_db - INFO - ingest_db:30 - DataFrame shape: (7043, 21)
+2025-09-12 19:22:53,639 - ingestion_db - INFO - ingest_db:42 - Successfully ingested 7043 records into table 'telecom_data'
+2025-09-12 19:22:53,640 - ingestion_db - INFO - load_raw_data:102 - Successfully processed: telecom_data.csv
+2025-09-12 19:22:53,641 - ingestion_db - INFO - load_raw_data:125 - Database connection closed
+2025-09-12 19:22:53,641 - ingestion_db - INFO - load_raw_data:131 - ==================================================
+2025-09-12 19:22:53,641 - ingestion_db - INFO - load_raw_data:132 - INGESTION COMPLETE
+2025-09-12 19:22:53,641 - ingestion_db - INFO - load_raw_data:133 - Total files processed: 1
+2025-09-12 19:22:53,641 - ingestion_db - INFO - load_raw_data:134 - Successful: 1
+2025-09-12 19:22:53,641 - ingestion_db - INFO - load_raw_data:135 - Failed: 0
+2025-09-12 19:22:53,642 - ingestion_db - INFO - load_raw_data:136 - Total time taken: 0.08 minutes
+2025-09-12 19:22:53,642 - ingestion_db - INFO - load_raw_data:137 - ==================================================
+2025-09-12 19:23:40,563 - ingestion_db - INFO - create_connection:19 - Database connection established successfully
+2025-09-12 19:27:45,096 - ingestion_db - INFO - create_connection:19 - Database connection established successfully

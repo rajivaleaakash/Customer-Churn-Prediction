@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+CHURN PREDICTION MODEL TRAINING REPORT
+--------------------------------------------------------------------------------
+Training Timestamp: 20250917_205551
+SMOTE Applied: True
+Random State: 42
+
+MODEL PERFORMANCE SUMMARY
+--------------------------------------------------
+
+RandomForest:
+  Accuracy:  0.7566
+  Precision: 0.5301
+  Recall:    0.7299
+  F1 Score:  0.6142
+  ROC AUC:   0.8293
+
+XGBoost:
+  Accuracy:  0.7509
+  Precision: 0.5240
+  Recall:    0.6711
+  F1 Score:  0.5885
+  ROC AUC:   0.8123
+
+LightGBM:
+  Accuracy:  0.6388
+  Precision: 0.4186
+  Recall:    0.9278
+  F1 Score:  0.5769
+  ROC AUC:   0.8366
+
+BEST MODEL: LightGBM
+ROC AUC Score: 0.8366
+
+================================================================================
+DETAILED CLASSIFICATION REPORTS
+================================================================================
+
+RandomForest Classification Report:
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.89      0.77      0.82      1035
+           1       0.53      0.73      0.61       374
+
+    accuracy                           0.76      1409
+   macro avg       0.71      0.75      0.72      1409
+weighted avg       0.79      0.76      0.77      1409
+
+Confusion Matrix:
+[[793 242]
+ [101 273]]
+
+
+XGBoost Classification Report:
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.87      0.78      0.82      1035
+           1       0.52      0.67      0.59       374
+
+    accuracy                           0.75      1409
+   macro avg       0.70      0.73      0.70      1409
+weighted avg       0.78      0.75      0.76      1409
+
+Confusion Matrix:
+[[807 228]
+ [123 251]]
+
+
+LightGBM Classification Report:
+----------------------------------------
+              precision    recall  f1-score   support
+
+           0       0.95      0.53      0.68      1035
+           1       0.42      0.93      0.58       374
+
+    accuracy                           0.64      1409
+   macro avg       0.69      0.73      0.63      1409
+weighted avg       0.81      0.64      0.66      1409
+
+Confusion Matrix:
+[[553 482]
+ [ 27 347]]
+

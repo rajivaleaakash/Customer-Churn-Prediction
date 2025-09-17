@@ -9,7 +9,7 @@ from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, f1_score,
     roc_auc_score, classification_report, confusion_matrix, make_scorer
 )
-from sklearn.model_selection import cross_val_score, GridSearchCV, StratifiedKFold
+from sklearn.model_selection import cross_val_score, GridSearchCV, StratifiedKFold, RandomizedSearchCV
 from sklearn.ensemble import RandomForestClassifier
 import xgboost as xgb
 import lightgbm as lgb
@@ -75,10 +75,10 @@ def setup_models():
                     'colsample_bytree': [0.8, 1.0],
                     'reg_lambda': [1,1.5],
                     'min_child_samples': [15,20],
-                    'objective': 'binary',
+                    'objective': ['binary'],
                     'scale_pos_weight': [5,8,11],
-                    'boosting_type': 'gbdt',
-                    'class_weight': ['balanced']
+                    'boosting_type': ['gbdt'],
+                    #'class_weight': ['balanced']
                 }
             }
         }
@@ -147,7 +147,7 @@ def train_single_model(model_name, model_config, X_train, y_train, X_test, y_tes
             logger.info(f"Performing hyperparameter tuning for {model_name} using GridSearchCV")
 
             cv_folds = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
-            grid_search = GridSearchCV(
+            grid_search = RandomizedSearchCV(
                 base_model,
                 model_config['params'],
                 cv = cv_folds,

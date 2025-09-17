@@ -1,0 +1,186 @@
+2025-09-17 00:31:14,655 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 00:31:31,474 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:36:12,971 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 00:36:29,187 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:48:09,734 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 00:48:09,734 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 00:48:25,893 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:48:25,893 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:56:47,117 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 00:56:47,117 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 00:57:03,276 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:57:03,276 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:02:12,891 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 01:02:12,892 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 01:02:29,055 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:02:29,055 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:10:07,696 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 01:10:07,696 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 01:10:23,916 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:10:23,916 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:25:32,663 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 01:25:32,663 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 01:25:48,838 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:25:48,838 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:31:38,581 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 01:31:38,581 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 01:31:54,786 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:31:54,786 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:42:22,147 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 01:42:22,147 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 01:42:38,368 - features - ERROR - load_and_split_data:295 - Error loading and splitting data: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 01:42:38,369 - features - ERROR - main:333 - Error in main execution: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 20:52:18,756 - features - INFO - main:308 - === Starting Features Module Demo ===
+2025-09-17 20:52:18,759 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 20:52:20,380 - features - INFO - load_and_split_data:273 - Loaded data with shape: (7043, 21)
+2025-09-17 20:52:20,411 - features - INFO - load_and_split_data:289 - Data split completed - Train: 5634, Test: 1409
+2025-09-17 20:52:20,412 - features - INFO - load_and_split_data:302 - Database connection closed
+2025-09-17 20:52:20,413 - features - INFO - preprocess_features:75 - Starting feature preprocessing. Input shape: (5634, 21)
+2025-09-17 20:52:20,427 - features - INFO - preprocess_features:86 - Dropped 0 rows with missing values
+2025-09-17 20:52:20,434 - features - INFO - preprocess_features:95 - Filled 8 missing totalcharges with median: 1398.125
+2025-09-17 20:52:20,449 - features - INFO - preprocess_features:114 - Mapped gender column 'gender' to binary values
+2025-09-17 20:52:20,452 - features - INFO - preprocess_features:125 - Mapped yes/no column 'partner' to binary values
+2025-09-17 20:52:20,456 - features - INFO - preprocess_features:125 - Mapped yes/no column 'dependents' to binary values
+2025-09-17 20:52:20,459 - features - INFO - preprocess_features:125 - Mapped yes/no column 'phoneservice' to binary values
+2025-09-17 20:52:20,463 - features - INFO - preprocess_features:125 - Mapped yes/no column 'multiplelines' to binary values
+2025-09-17 20:52:20,468 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinesecurity' to binary values
+2025-09-17 20:52:20,471 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinebackup' to binary values
+2025-09-17 20:52:20,474 - features - INFO - preprocess_features:125 - Mapped yes/no column 'deviceprotection' to binary values
+2025-09-17 20:52:20,477 - features - INFO - preprocess_features:125 - Mapped yes/no column 'techsupport' to binary values
+2025-09-17 20:52:20,481 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingtv' to binary values
+2025-09-17 20:52:20,484 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingmovies' to binary values
+2025-09-17 20:52:20,489 - features - INFO - preprocess_features:125 - Mapped yes/no column 'paperlessbilling' to binary values
+2025-09-17 20:52:20,491 - features - INFO - create_features:15 - Starting feature engineering
+2025-09-17 20:52:20,498 - features - INFO - create_features:24 - Created tenure-based features
+2025-09-17 20:52:20,506 - features - INFO - create_features:32 - Created contract-based features
+2025-09-17 20:52:20,509 - features - INFO - create_features:41 - Created service bundle score using 4 columns
+2025-09-17 20:52:20,510 - features - INFO - create_features:48 - Created charges per tenure feature
+2025-09-17 20:52:20,511 - features - INFO - create_features:52 - Created high monthly charges feature
+2025-09-17 20:52:20,513 - features - INFO - create_features:56 - Created high risk payment feature
+2025-09-17 20:52:20,515 - features - INFO - create_features:62 - Created customer profile features
+2025-09-17 20:52:20,516 - features - INFO - create_features:64 - Feature engineering completed. Shape: (5634, 31)
+2025-09-17 20:52:20,517 - features - INFO - preprocess_features:141 - Converted category column 'tenure_segment' to numeric
+2025-09-17 20:52:20,526 - features - INFO - preprocess_features:155 - One-hot encoded column 'contract' into 2 features
+2025-09-17 20:52:20,534 - features - INFO - preprocess_features:155 - One-hot encoded column 'internetservice' into 2 features
+2025-09-17 20:52:20,540 - features - INFO - preprocess_features:155 - One-hot encoded column 'paymentmethod' into 3 features
+2025-09-17 20:52:20,544 - features - INFO - preprocess_features:166 - Dropped columns: ['customerid', 'tenure', 'partner', 'dependents']
+2025-09-17 20:52:20,547 - features - INFO - preprocess_features:177 - Stored 30 feature names for training
+2025-09-17 20:52:20,547 - features - INFO - preprocess_features:179 - Feature preprocessing completed. Output shape: (5634, 31)
+2025-09-17 20:52:20,549 - features - INFO - preprocess_features:75 - Starting feature preprocessing. Input shape: (1409, 21)
+2025-09-17 20:52:20,554 - features - INFO - preprocess_features:86 - Dropped 0 rows with missing values
+2025-09-17 20:52:20,556 - features - INFO - preprocess_features:95 - Filled 3 missing totalcharges with median: 1395.525
+2025-09-17 20:52:20,559 - features - INFO - preprocess_features:114 - Mapped gender column 'gender' to binary values
+2025-09-17 20:52:20,560 - features - INFO - preprocess_features:125 - Mapped yes/no column 'partner' to binary values
+2025-09-17 20:52:20,562 - features - INFO - preprocess_features:125 - Mapped yes/no column 'dependents' to binary values
+2025-09-17 20:52:20,564 - features - INFO - preprocess_features:125 - Mapped yes/no column 'phoneservice' to binary values
+2025-09-17 20:52:20,565 - features - INFO - preprocess_features:125 - Mapped yes/no column 'multiplelines' to binary values
+2025-09-17 20:52:20,568 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinesecurity' to binary values
+2025-09-17 20:52:20,569 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinebackup' to binary values
+2025-09-17 20:52:20,571 - features - INFO - preprocess_features:125 - Mapped yes/no column 'deviceprotection' to binary values
+2025-09-17 20:52:20,573 - features - INFO - preprocess_features:125 - Mapped yes/no column 'techsupport' to binary values
+2025-09-17 20:52:20,574 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingtv' to binary values
+2025-09-17 20:52:20,576 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingmovies' to binary values
+2025-09-17 20:52:20,578 - features - INFO - preprocess_features:125 - Mapped yes/no column 'paperlessbilling' to binary values
+2025-09-17 20:52:20,579 - features - INFO - create_features:15 - Starting feature engineering
+2025-09-17 20:52:20,582 - features - INFO - create_features:24 - Created tenure-based features
+2025-09-17 20:52:20,585 - features - INFO - create_features:32 - Created contract-based features
+2025-09-17 20:52:20,587 - features - INFO - create_features:41 - Created service bundle score using 4 columns
+2025-09-17 20:52:20,587 - features - INFO - create_features:48 - Created charges per tenure feature
+2025-09-17 20:52:20,588 - features - INFO - create_features:52 - Created high monthly charges feature
+2025-09-17 20:52:20,589 - features - INFO - create_features:56 - Created high risk payment feature
+2025-09-17 20:52:20,591 - features - INFO - create_features:62 - Created customer profile features
+2025-09-17 20:52:20,591 - features - INFO - create_features:64 - Feature engineering completed. Shape: (1409, 31)
+2025-09-17 20:52:20,592 - features - INFO - preprocess_features:141 - Converted category column 'tenure_segment' to numeric
+2025-09-17 20:52:20,595 - features - INFO - preprocess_features:155 - One-hot encoded column 'contract' into 2 features
+2025-09-17 20:52:20,597 - features - INFO - preprocess_features:155 - One-hot encoded column 'internetservice' into 2 features
+2025-09-17 20:52:20,600 - features - INFO - preprocess_features:155 - One-hot encoded column 'paymentmethod' into 3 features
+2025-09-17 20:52:20,602 - features - INFO - preprocess_features:166 - Dropped columns: ['customerid', 'tenure', 'partner', 'dependents']
+2025-09-17 20:52:20,604 - features - INFO - preprocess_features:179 - Feature preprocessing completed. Output shape: (1409, 31)
+2025-09-17 20:52:20,605 - features - INFO - select_features:190 - Starting feature selection with k=15
+2025-09-17 20:52:20,618 - features - INFO - select_features:214 - Selected 15 features: ['onlinesecurity', 'paperlessbilling', 'monthlycharges', 'totalcharges', 'tenure_year', 'is_month_to_month', 'has_long_contract', 'service_bundle_score', 'high_monthly_charges', 'high_risk_payment', 'contract_One_year', 'contract_Two_year', 'internetservice_Fiber_optic', 'internetservice_No', 'paymentmethod_Electronic_check']
+2025-09-17 20:52:20,619 - features - INFO - get_feature_importance_names:227 - Calculating feature importance for top 10 features
+2025-09-17 20:52:21,754 - features - INFO - get_feature_importance_names:252 - Top Feature Importances calculated successfully
+2025-09-17 20:52:21,762 - features - INFO - main:330 - === Features Module Demo Completed Successfully ===
+2025-09-17 20:55:51,489 - features - INFO - load_and_split_data:267 - Loading data from database
+2025-09-17 20:55:52,221 - features - INFO - load_and_split_data:273 - Loaded data with shape: (7043, 21)
+2025-09-17 20:55:52,237 - features - INFO - load_and_split_data:289 - Data split completed - Train: 5634, Test: 1409
+2025-09-17 20:55:52,239 - features - INFO - load_and_split_data:302 - Database connection closed
+2025-09-17 20:55:52,239 - features - INFO - preprocess_features:75 - Starting feature preprocessing. Input shape: (5634, 21)
+2025-09-17 20:55:52,253 - features - INFO - preprocess_features:86 - Dropped 0 rows with missing values
+2025-09-17 20:55:52,260 - features - INFO - preprocess_features:95 - Filled 8 missing totalcharges with median: 1398.125
+2025-09-17 20:55:52,279 - features - INFO - preprocess_features:114 - Mapped gender column 'gender' to binary values
+2025-09-17 20:55:52,286 - features - INFO - preprocess_features:125 - Mapped yes/no column 'partner' to binary values
+2025-09-17 20:55:52,293 - features - INFO - preprocess_features:125 - Mapped yes/no column 'dependents' to binary values
+2025-09-17 20:55:52,296 - features - INFO - preprocess_features:125 - Mapped yes/no column 'phoneservice' to binary values
+2025-09-17 20:55:52,299 - features - INFO - preprocess_features:125 - Mapped yes/no column 'multiplelines' to binary values
+2025-09-17 20:55:52,304 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinesecurity' to binary values
+2025-09-17 20:55:52,308 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinebackup' to binary values
+2025-09-17 20:55:52,311 - features - INFO - preprocess_features:125 - Mapped yes/no column 'deviceprotection' to binary values
+2025-09-17 20:55:52,314 - features - INFO - preprocess_features:125 - Mapped yes/no column 'techsupport' to binary values
+2025-09-17 20:55:52,318 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingtv' to binary values
+2025-09-17 20:55:52,321 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingmovies' to binary values
+2025-09-17 20:55:52,331 - features - INFO - preprocess_features:125 - Mapped yes/no column 'paperlessbilling' to binary values
+2025-09-17 20:55:52,333 - features - INFO - create_features:15 - Starting feature engineering
+2025-09-17 20:55:52,339 - features - INFO - create_features:24 - Created tenure-based features
+2025-09-17 20:55:52,347 - features - INFO - create_features:32 - Created contract-based features
+2025-09-17 20:55:52,349 - features - INFO - create_features:41 - Created service bundle score using 4 columns
+2025-09-17 20:55:52,350 - features - INFO - create_features:48 - Created charges per tenure feature
+2025-09-17 20:55:52,351 - features - INFO - create_features:52 - Created high monthly charges feature
+2025-09-17 20:55:52,352 - features - INFO - create_features:56 - Created high risk payment feature
+2025-09-17 20:55:52,354 - features - INFO - create_features:62 - Created customer profile features
+2025-09-17 20:55:52,354 - features - INFO - create_features:64 - Feature engineering completed. Shape: (5634, 31)
+2025-09-17 20:55:52,355 - features - INFO - preprocess_features:141 - Converted category column 'tenure_segment' to numeric
+2025-09-17 20:55:52,361 - features - INFO - preprocess_features:155 - One-hot encoded column 'contract' into 2 features
+2025-09-17 20:55:52,366 - features - INFO - preprocess_features:155 - One-hot encoded column 'internetservice' into 2 features
+2025-09-17 20:55:52,371 - features - INFO - preprocess_features:155 - One-hot encoded column 'paymentmethod' into 3 features
+2025-09-17 20:55:52,375 - features - INFO - preprocess_features:166 - Dropped columns: ['customerid', 'tenure', 'partner', 'dependents']
+2025-09-17 20:55:52,378 - features - INFO - preprocess_features:177 - Stored 30 feature names for training
+2025-09-17 20:55:52,378 - features - INFO - preprocess_features:179 - Feature preprocessing completed. Output shape: (5634, 31)
+2025-09-17 20:55:52,380 - features - INFO - preprocess_features:75 - Starting feature preprocessing. Input shape: (1409, 21)
+2025-09-17 20:55:52,384 - features - INFO - preprocess_features:86 - Dropped 0 rows with missing values
+2025-09-17 20:55:52,386 - features - INFO - preprocess_features:95 - Filled 3 missing totalcharges with median: 1395.525
+2025-09-17 20:55:52,389 - features - INFO - preprocess_features:114 - Mapped gender column 'gender' to binary values
+2025-09-17 20:55:52,391 - features - INFO - preprocess_features:125 - Mapped yes/no column 'partner' to binary values
+2025-09-17 20:55:52,392 - features - INFO - preprocess_features:125 - Mapped yes/no column 'dependents' to binary values
+2025-09-17 20:55:52,394 - features - INFO - preprocess_features:125 - Mapped yes/no column 'phoneservice' to binary values
+2025-09-17 20:55:52,396 - features - INFO - preprocess_features:125 - Mapped yes/no column 'multiplelines' to binary values
+2025-09-17 20:55:52,398 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinesecurity' to binary values
+2025-09-17 20:55:52,400 - features - INFO - preprocess_features:125 - Mapped yes/no column 'onlinebackup' to binary values
+2025-09-17 20:55:52,401 - features - INFO - preprocess_features:125 - Mapped yes/no column 'deviceprotection' to binary values
+2025-09-17 20:55:52,403 - features - INFO - preprocess_features:125 - Mapped yes/no column 'techsupport' to binary values
+2025-09-17 20:55:52,405 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingtv' to binary values
+2025-09-17 20:55:52,406 - features - INFO - preprocess_features:125 - Mapped yes/no column 'streamingmovies' to binary values
+2025-09-17 20:55:52,409 - features - INFO - preprocess_features:125 - Mapped yes/no column 'paperlessbilling' to binary values
+2025-09-17 20:55:52,409 - features - INFO - create_features:15 - Starting feature engineering
+2025-09-17 20:55:52,412 - features - INFO - create_features:24 - Created tenure-based features
+2025-09-17 20:55:52,415 - features - INFO - create_features:32 - Created contract-based features
+2025-09-17 20:55:52,416 - features - INFO - create_features:41 - Created service bundle score using 4 columns
+2025-09-17 20:55:52,417 - features - INFO - create_features:48 - Created charges per tenure feature
+2025-09-17 20:55:52,418 - features - INFO - create_features:52 - Created high monthly charges feature
+2025-09-17 20:55:52,419 - features - INFO - create_features:56 - Created high risk payment feature
+2025-09-17 20:55:52,421 - features - INFO - create_features:62 - Created customer profile features
+2025-09-17 20:55:52,421 - features - INFO - create_features:64 - Feature engineering completed. Shape: (1409, 31)
+2025-09-17 20:55:52,422 - features - INFO - preprocess_features:141 - Converted category column 'tenure_segment' to numeric
+2025-09-17 20:55:52,425 - features - INFO - preprocess_features:155 - One-hot encoded column 'contract' into 2 features
+2025-09-17 20:55:52,428 - features - INFO - preprocess_features:155 - One-hot encoded column 'internetservice' into 2 features
+2025-09-17 20:55:52,431 - features - INFO - preprocess_features:155 - One-hot encoded column 'paymentmethod' into 3 features
+2025-09-17 20:55:52,433 - features - INFO - preprocess_features:166 - Dropped columns: ['customerid', 'tenure', 'partner', 'dependents']
+2025-09-17 20:55:52,435 - features - INFO - preprocess_features:179 - Feature preprocessing completed. Output shape: (1409, 31)
+2025-09-17 20:55:52,436 - features - INFO - select_features:190 - Starting feature selection with k=15
+2025-09-17 20:55:52,448 - features - INFO - select_features:214 - Selected 15 features: ['onlinesecurity', 'paperlessbilling', 'monthlycharges', 'totalcharges', 'tenure_year', 'is_month_to_month', 'has_long_contract', 'service_bundle_score', 'high_monthly_charges', 'high_risk_payment', 'contract_One_year', 'contract_Two_year', 'internetservice_Fiber_optic', 'internetservice_No', 'paymentmethod_Electronic_check']

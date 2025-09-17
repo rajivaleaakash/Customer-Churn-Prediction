@@ -8,8 +8,8 @@ logger = setup_logger('ingestion_db')
 def create_connection():
     '''Create and return database engine'''
     try:
-        server = r'server_name'
-        database = r'db_churn'
+        server = r'server-name'
+        database = r'database-name'
         connection_string = f"mssql+pyodbc://@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes"
         engine = create_engine(connection_string)
 

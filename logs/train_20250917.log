@@ -1,0 +1,294 @@
+2025-09-17 00:31:14,654 - train - INFO - main:416 - ============================================================
+2025-09-17 00:31:14,654 - train - INFO - main:417 - CHURN PREDICTION MODEL TRAINING PIPELINE STARTED
+2025-09-17 00:31:14,654 - train - INFO - main:418 - ============================================================
+2025-09-17 00:31:14,654 - train - INFO - main:429 - Configuration - USE_SMOTE: True, FEATURE_SELECTION_K: 15
+2025-09-17 00:31:14,655 - train - INFO - main:432 - Loading and splitting data...
+2025-09-17 00:31:31,475 - train - ERROR - main:529 - Training pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\train.py", line 434, in main
+    train_df, test_df = load_and_split_data(test_size=0.2, random_state=RANDOM_STATE)
+                        ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\features.py", line 269, in load_and_split_data
+    engine = create_connection()
+  File "d:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\ingestion_db.py", line 17, in create_connection
+    with engine.connect() as conn:
+         ~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3277, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2440, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:31:31,593 - train - INFO - <module>:536 - Training completed successfully
+2025-09-17 00:36:12,968 - train - INFO - main:416 - ============================================================
+2025-09-17 00:36:12,969 - train - INFO - main:417 - CHURN PREDICTION MODEL TRAINING PIPELINE STARTED
+2025-09-17 00:36:12,969 - train - INFO - main:418 - ============================================================
+2025-09-17 00:36:12,970 - train - INFO - main:429 - Configuration - USE_SMOTE: True, FEATURE_SELECTION_K: 15
+2025-09-17 00:36:12,971 - train - INFO - main:432 - Loading and splitting data...
+2025-09-17 00:36:29,187 - train - ERROR - main:529 - Training pipeline failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+pyodbc.OperationalError: ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\train.py", line 434, in main
+    train_df, test_df = load_and_split_data(test_size=0.2, random_state=RANDOM_STATE)
+                        ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\features.py", line 269, in load_and_split_data
+    engine = create_connection()
+  File "D:\Elevated_Lab\Customer Churn Analysis for Telecom Industry\Customer-Churn-Prediction\ingestion_db.py", line 17, in create_connection
+    with engine.connect() as conn:
+         ~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3277, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 2440, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\base.py", line 3301, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 711, in checkout
+    rec = pool._do_get()
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\impl.py", line 175, in _do_get
+    return self._create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 673, in __init__
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 899, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\pool\base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\Programs\Python\Python313\Lib\site-packages\sqlalchemy\engine\default.py", line 629, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  (53) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (53)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-17 00:36:29,237 - train - INFO - <module>:536 - Training completed successfully
+2025-09-17 20:55:51,452 - train - INFO - main:416 - ============================================================
+2025-09-17 20:55:51,488 - train - INFO - main:417 - CHURN PREDICTION MODEL TRAINING PIPELINE STARTED
+2025-09-17 20:55:51,488 - train - INFO - main:418 - ============================================================
+2025-09-17 20:55:51,489 - train - INFO - main:429 - Configuration - USE_SMOTE: True, FEATURE_SELECTION_K: 15
+2025-09-17 20:55:51,489 - train - INFO - main:432 - Loading and splitting data...
+2025-09-17 20:55:52,239 - train - INFO - main:435 - Data loaded successfully. Train shape: (5634, 21), Test shape: (1409, 21)
+2025-09-17 20:55:52,239 - train - INFO - main:438 - Preprocessing features...
+2025-09-17 20:55:52,435 - train - INFO - main:443 - Features preprocessed. Train: (5634, 31), Test: (1409, 31)
+2025-09-17 20:55:52,435 - train - INFO - main:447 - Performing feature selection (k=15)...
+2025-09-17 20:55:52,449 - train - INFO - main:463 - Selected 15 features
+2025-09-17 20:55:52,452 - train - DEBUG - main:473 - Feature names: ['onlinesecurity', 'paperlessbilling', 'monthlycharges', 'totalcharges', 'tenure_year', 'is_month_to_month', 'has_long_contract', 'service_bundle_score', 'high_monthly_charges', 'high_risk_payment', 'contract_One_year', 'contract_Two_year', 'internetservice_Fiber_optic', 'internetservice_No', 'paymentmethod_Electronic_check']
+2025-09-17 20:55:52,488 - train - INFO - main:476 - Setting up models...
+2025-09-17 20:55:52,488 - train - INFO - setup_models:30 - Setting up model configurations
+2025-09-17 20:55:52,489 - train - INFO - setup_models:85 - Successfully configured 3 models
+2025-09-17 20:55:52,490 - train - INFO - main:480 - Starting model training...
+2025-09-17 20:55:52,490 - train - INFO - train_all_models:204 - Starting training for 3 models
+2025-09-17 20:55:52,490 - train - INFO - apply_smote:93 - Applying SMOTE to balance training data
+2025-09-17 20:55:52,516 - train - DEBUG - apply_smote:97 - Original training data shape: (5634, 15)
+2025-09-17 20:55:52,516 - train - DEBUG - apply_smote:98 - Original class distribution: {0: 4139, 1: 1495}
+2025-09-17 20:55:52,587 - train - INFO - apply_smote:105 - SMOTE applied successfully. New shape: (8278, 15)
+2025-09-17 20:55:52,588 - train - DEBUG - apply_smote:106 - New class distribution: {0: 4139, 1: 4139}
+2025-09-17 20:55:52,588 - train - INFO - train_single_model:140 - Training RandomForest model
+2025-09-17 20:55:52,589 - train - INFO - train_single_model:147 - Performing hyperparameter tuning for RandomForest using GridSearchCV
+2025-09-17 20:57:05,516 - train - INFO - train_single_model:168 - RandomForest - Best CV Score: 0.8831
+2025-09-17 20:57:05,516 - train - DEBUG - train_single_model:169 - RandomForest - Best Parameters: {'random_state': 42, 'n_estimators': 359, 'min_samples_split': 11, 'min_samples_leaf': 8, 'max_features': 'sqrt', 'max_depth': 5, 'class_weight': 'balanced_subsample', 'bootstrap': True}
+2025-09-17 20:57:05,517 - train - DEBUG - evaluate_model:116 - Evaluating model performance
+2025-09-17 20:57:05,771 - train - DEBUG - evaluate_model:132 - Model evaluation completed. ROC AUC: 0.8293
+2025-09-17 20:57:05,771 - train - INFO - train_single_model:185 - RandomForest training completed successfully
+2025-09-17 20:57:05,771 - train - INFO - train_single_model:186 - RandomForest Results - Accuracy: 0.7566, Precision: 0.5301, Recall: 0.7299, F1: 0.6142, ROC AUC: 0.8293
+2025-09-17 20:57:05,774 - train - INFO - train_single_model:140 - Training XGBoost model
+2025-09-17 20:57:05,776 - train - INFO - train_single_model:147 - Performing hyperparameter tuning for XGBoost using GridSearchCV
+2025-09-17 20:59:07,164 - train - INFO - train_single_model:168 - XGBoost - Best CV Score: 0.8922
+2025-09-17 20:59:07,164 - train - DEBUG - train_single_model:169 - XGBoost - Best Parameters: {'subsample': 1.0, 'scale_pos_weight': 3, 'reg_lambda': 2, 'reg_alpha': 2.5, 'n_estimators': 350, 'min_child_weight': 4, 'max_depth': 12, 'learning_rate': 0.1, 'colsample_bytree': 1.0}
+2025-09-17 20:59:07,166 - train - DEBUG - evaluate_model:116 - Evaluating model performance
+2025-09-17 20:59:07,315 - train - DEBUG - evaluate_model:132 - Model evaluation completed. ROC AUC: 0.8123
+2025-09-17 20:59:07,315 - train - INFO - train_single_model:185 - XGBoost training completed successfully
+2025-09-17 20:59:07,316 - train - INFO - train_single_model:186 - XGBoost Results - Accuracy: 0.7509, Precision: 0.5240, Recall: 0.6711, F1: 0.5885, ROC AUC: 0.8123
+2025-09-17 20:59:07,318 - train - INFO - train_single_model:140 - Training LightGBM model
+2025-09-17 20:59:07,319 - train - INFO - train_single_model:147 - Performing hyperparameter tuning for LightGBM using GridSearchCV
+2025-09-17 21:00:02,099 - train - INFO - train_single_model:168 - LightGBM - Best CV Score: 0.9693
+2025-09-17 21:00:02,099 - train - DEBUG - train_single_model:169 - LightGBM - Best Parameters: {'subsample': 1.0, 'scale_pos_weight': 8, 'reg_lambda': 1, 'objective': 'binary', 'num_leaves': 40, 'n_estimators': 350, 'min_child_samples': 15, 'max_depth': 9, 'learning_rate': 0.01, 'colsample_bytree': 1.0, 'boosting_type': 'gbdt'}
+2025-09-17 21:00:02,100 - train - DEBUG - evaluate_model:116 - Evaluating model performance
+2025-09-17 21:00:02,252 - train - DEBUG - evaluate_model:132 - Model evaluation completed. ROC AUC: 0.8366
+2025-09-17 21:00:02,253 - train - INFO - train_single_model:185 - LightGBM training completed successfully
+2025-09-17 21:00:02,253 - train - INFO - train_single_model:186 - LightGBM Results - Accuracy: 0.6388, Precision: 0.4186, Recall: 0.9278, F1: 0.5769, ROC AUC: 0.8366
+2025-09-17 21:00:02,255 - train - INFO - train_all_models:235 - Successfully trained 3/3 models
+2025-09-17 21:00:02,255 - train - INFO - find_best_model:243 - Finding best performing model
+2025-09-17 21:00:02,256 - train - INFO - find_best_model:263 - Best model identified: LightGBM with ROC AUC: 0.8366
+2025-09-17 21:00:02,256 - train - INFO - main:493 - Saving models...
+2025-09-17 21:00:02,256 - train - INFO - save_models:274 - Saving trained models and metadata
+2025-09-17 21:00:02,587 - train - DEBUG - save_models:290 - Saved RandomForest to models/RandomForest_model_20250917_205551.joblib
+2025-09-17 21:00:02,700 - train - DEBUG - save_models:290 - Saved XGBoost to models/XGBoost_model_20250917_205551.joblib
+2025-09-17 21:00:02,870 - train - DEBUG - save_models:290 - Saved LightGBM to models/LightGBM_model_20250917_205551.joblib
+2025-09-17 21:00:03,046 - train - INFO - save_models:301 - Saved best model (LightGBM) to models/best_model_20250917_205551.joblib
+2025-09-17 21:00:03,050 - train - INFO - save_models:319 - Saved metadata to models/model_metadata_20250917_205551.joblib
+2025-09-17 21:00:03,051 - train - INFO - save_models:323 - Successfully saved 5 files
+2025-09-17 21:00:03,063 - train - INFO - main:497 - Generating training report...
+2025-09-17 21:00:03,063 - train - INFO - generate_training_report:336 - Generating training report
+2025-09-17 21:00:03,065 - train - INFO - generate_training_report:378 - Training report saved to: reports/training_report_20250917_205551.txt
+2025-09-17 21:00:03,068 - train - INFO - main:509 - Training pipeline completed successfully
+2025-09-17 21:00:03,068 - train - INFO - main:510 - Summary: {'models_trained': 3, 'best_model': 'LightGBM', 'best_roc_auc': 0.8366361827998656, 'files_saved': 5, 'report_path': 'reports/training_report_20250917_205551.txt'}
+2025-09-17 21:00:03,094 - train - INFO - <module>:536 - Training completed successfully
